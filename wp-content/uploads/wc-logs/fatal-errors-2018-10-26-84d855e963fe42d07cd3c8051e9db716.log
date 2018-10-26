@@ -1,0 +1,40 @@
+2018-10-26T03:04:26+00:00 CRITICAL Cannot redeclare add_role() (previously declared in W:\domains\ksk.local\wp-includes\capabilities.php:728) в W:\domains\ksk.local\wp-content\themes\sptheme\functions.php на строке 53
+
+2018-10-26T08:48:02+00:00 CRITICAL Uncaught Error: Call to undefined function array_key_last() in W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\parts\bread-crumbs.php:30
+Stack trace:
+#0 W:\domains\ksk.local\wp-includes\template.php(690): require()
+#1 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#2 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 W:\domains\ksk.local\wp-content\themes\sptheme\reviews.php(58): get_template_part('template-parts/...', 'crumbs')
+#4 W:\domains\ksk.local\wp-includes\template-loader.php(74): include('W:\\domains\\ksk....')
+#5 W:\domains\ksk.local\wp-blog-header.php(19): require_once('W:\\domains\\ksk....')
+#6 W:\domains\ksk.local\index.php(17): require('W:\\domains\\ksk....')
+#7 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\parts\bread-crumbs.php на строке 30
+
+2018-10-26T08:48:47+00:00 CRITICAL Uncaught Error: Call to undefined function array_key_last() in W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\parts\bread-crumbs.php:30
+Stack trace:
+#0 W:\domains\ksk.local\wp-includes\template.php(690): require()
+#1 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#2 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 W:\domains\ksk.local\wp-content\themes\sptheme\reviews.php(58): get_template_part('template-parts/...', 'crumbs')
+#4 W:\domains\ksk.local\wp-includes\template-loader.php(74): include('W:\\domains\\ksk....')
+#5 W:\domains\ksk.local\wp-blog-header.php(19): require_once('W:\\domains\\ksk....')
+#6 W:\domains\ksk.local\index.php(17): require('W:\\domains\\ksk....')
+#7 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\parts\bread-crumbs.php на строке 30
+
+2018-10-26T08:52:27+00:00 CRITICAL Uncaught Error: Call to undefined function array_key_last() in W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\parts\bread-crumbs.php:31
+Stack trace:
+#0 W:\domains\ksk.local\wp-includes\template.php(690): require()
+#1 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#2 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 W:\domains\ksk.local\wp-content\themes\sptheme\reviews.php(58): get_template_part('template-parts/...', 'crumbs')
+#4 W:\domains\ksk.local\wp-includes\template-loader.php(74): include('W:\\domains\\ksk....')
+#5 W:\domains\ksk.local\wp-blog-header.php(19): require_once('W:\\domains\\ksk....')
+#6 W:\domains\ksk.local\index.php(17): require('W:\\domains\\ksk....')
+#7 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\parts\bread-crumbs.php на строке 31
+
+2018-10-26T18:31:35+00:00 CRITICAL syntax error, unexpected end of file в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\shop\shop-products.php на строке 51
+
