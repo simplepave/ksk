@@ -9,6 +9,9 @@ $products = shop_product_data();
 if ($products) :
     $shop_data = shop_data();
     $left_right = is_front_page();
+
+    // $post = get_post(66);
+    // $post_image_full = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
 ?>
     <div class="services">
         <div class="container">
@@ -43,6 +46,14 @@ foreach ($products as $key => $product) :
 <?php
 endif;
 endforeach;
+/*
+                <div class="item_services">
+                    <a href="<?php echo esc_url(home_url($post->post_name . '/')); ?>">
+                        <img src="<?php echo $post_image_full; ?>" alt="">
+                        <p><?php echo $post->post_title; ?></p>
+                    </a>
+                </div>
+*/
 ?>
             </div>
         </div>

@@ -46,13 +46,19 @@ header {
 	margin-top: 20px;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 
 
 .nav_header a {
 	color: #606060;
 	font-size: 16px;
+	padding: 0 15px;
+ border-right: 1px solid #000;
+}
+
+.nav_header a:hover {
+	text-decoration: underline;
 }
 
 .row_mob {
@@ -116,6 +122,10 @@ header {
 	color:#fff;
 	text-align:center;
 	display:inline-block;
+}
+
+.button_call:hover {
+	background:#032C77;
 }
 
 nav {
@@ -216,6 +226,15 @@ nav ul {
 
 nav ul li {
 	width: 25%;
+	border-right: 1px solid #5669a1;
+}
+
+nav ul li:first-child {
+	border-left: 1px solid #5669a1;
+}
+
+nav ul li:hover {
+	background: #032C77;
 }
 
 nav ul li a {
@@ -265,6 +284,9 @@ nav ul li a {
 	color:#fff;
 	text-align:center;
 	display:inline-block;
+}
+.button_title:hover {
+	background:#032C77;
 }
 
 .main_about {
@@ -379,6 +401,8 @@ nav ul li a {
 	left:0;
 	z-index:1;
 	display:none;
+	opacity: 0.95;
+	border-radius: 20px;
 }
 
 .why_we_hidden:before {
@@ -428,6 +452,13 @@ nav ul li a {
 
 .item_services {
 	position:relative;
+	overflow: hidden;
+}
+
+.item_services:hover img {
+	-webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
 }
 
 .row > .item_services {
@@ -441,6 +472,9 @@ nav ul li a {
 	width:100%;
 	height:auto;
 	display:block;
+	-moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
 }
 
 .services p,
@@ -498,6 +532,10 @@ nav ul li a {
 	color:#fff;
 	padding-top:12px;
 	display:inline-block;
+}
+
+.button_order:hover {
+	background:#032C77;
 }
 
 .our_partners {
@@ -687,6 +725,10 @@ nav ul li a {
 	display:block;
 }
 
+.item_certificates a:hover > span{
+	opacity: 1;
+}
+
 .item_certificates span {
 	background:url(../images/linz.png) no-repeat center;
 	width:100%;
@@ -694,6 +736,7 @@ nav ul li a {
 	position:absolute;
 	top:0;
 	left:0;
+	opacity: 0.7;
 }
 
 .item_certificates img {
@@ -1069,6 +1112,9 @@ nav ul li a {
 	height:55px;
 	color:#fff;
 }
+.calculator_but:hover {
+	background:#032C77;
+}
 
 footer {
 	background:#383838;
@@ -1094,6 +1140,10 @@ footer {
 	font-size:15px;
 	color:#fff;
 	text-transform:uppercase;
+}
+
+.footer_nav ul li a:hover {
+	text-decoration: underline;
 }
 
 .logo_block {
@@ -1179,6 +1229,7 @@ footer {
 	margin:0 auto;
 	padding:48px 0 75px;
 	display:none;
+	border-radius: 20px;
 }
 
 .mfp-content .credit_history,
@@ -1322,6 +1373,9 @@ footer {
 	height:40px;
 	color:#fff;
 }
+.submit_popup:hover {
+	background:#0436B4;
+}
 
 .check_box {
 	position:relative;
@@ -1409,6 +1463,33 @@ label > a {
 	margin:0 auto;
 	padding:40px 0 55px;
 	display:none;
+	border-radius: 20px;
+}
+
+/*Форма консультации в Партнерам*/
+
+.main_form > .free_consultation {
+	max-width:850px;
+	display: block;
+	-border: 1px solid #ccc;
+	box-shadow: 0px 0px 73px 0px rgba(0,0,0,0.14);
+}
+
+.main_form > .free_consultation > .head_credit_history {
+	max-width:800px;
+}
+
+.main_form > .free_consultation > form {
+	max-width:740px;
+	width:100%;
+	margin:0 auto;
+	padding:0 15px;
+}
+.main_form > .free_consultation > form > .row_flex {
+	flex-wrap: wrap-reverse;
+}
+.main_form > .free_consultation .check_box {
+	width:525px;
 }
 
 .free_consultation > p {
@@ -1434,6 +1515,7 @@ label > a {
 	margin:0 auto;
 	padding:40px 0 55px;
 	display:none;
+	border-radius: 20px;
 }
 
 .order_report > p {
@@ -1460,6 +1542,7 @@ label > a {
 	margin:0 auto;
 	padding:40px 0 55px;
 	display:none;
+	border-radius: 20px;
 }
 
 .get_report > p {
@@ -1813,7 +1896,7 @@ label > a {
 	height: 100%;
 	z-index: 0;
 	left: 0;
-	width: 50vw;
+	width: 49.4vw;
 	top: 0;
 }
 .request-call_descr:before {

@@ -21,5 +21,8 @@ get_template_part('template-parts/parts/bread', 'crumbs');
             <div class="row no-gutters"><?php echo $post->post_content; ?></div>
         </div>
     </div>
+    <div class="main_form">
+        <?php get_template_part('template-parts/form/form', 'free_consultation'); ?>
+    </div>
     <?php get_template_part('template-parts/home/home', 'partners'); ?>
 <?php get_footer();

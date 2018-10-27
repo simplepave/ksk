@@ -4,8 +4,6 @@
  * Front page
  */
 
-set_query_var('var_product_id', 'all');
-
 get_header();
 
 get_template_part('template-parts/home/home', 'title');

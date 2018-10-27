@@ -1,7 +1,9 @@
 <?php if (!defined('ABSPATH')) exit('No direct script access allowed');
 
 /**
- *
+ * @SimplePAVE
+ * https://t.me/SimplePAVE
+ * info@simplepave.ru
  */
 
 if (!class_exists('SP_Woo')) :

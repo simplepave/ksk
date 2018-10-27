@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
         from: 10000,
         to : 15000000,
 		step: 100,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-price').val(ui.from);
 			C = ui.from;
 
@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
 		min: 1,
 		max: 30,
 		step: 1,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-fee').val(ui.from);
 			F = ui.from;
 			pfee = F * 1 / C;
@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
 		min: 1,
 		max: 30,
 		step: 0.1,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-percent').val(ui.from);
 
 			P = ui.from;
@@ -152,7 +152,7 @@ jQuery(document).ready(function($) {
 		min: 1,
 		max: 30,
 		step: 1,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-period').val(ui.from);
 			T = ui.from;
 		}
@@ -172,7 +172,7 @@ jQuery(document).ready(function($) {
 		min: 100000,
 		max: 15000000,
 		step: 1000,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-p-price').val(ui.from);
 			K = ui.from;
 		}
@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
 		min: 1,
 		max: 30,
 		step: 1,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-p-percent').val(ui.from);
 			P = ui.from;
 		}
@@ -214,7 +214,7 @@ jQuery(document).ready(function($) {
 		min: 1,
 		max: 30,
 		step: 1,
-		onFinish: function(ui) {
+		onChange: function(ui) {
 			$('.js-p-period').val(ui.from);
 			T = ui.from;
 		}

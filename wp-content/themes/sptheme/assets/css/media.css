@@ -11,6 +11,10 @@
 	transform: translate(-200px, 155px);
 	width: 600px;
 }
+.request-call_right:after {
+    width: 49.3vw;
+}
+
 }
 @media (min-width: 280px) and (max-width: 1200px) {
 	.container {
@@ -38,6 +42,15 @@
 }
 }
 @media (min-width: 280px) and (max-width: 1140px) {
+.nav_header {
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.nav_header a {
+	border-right: none;
+	border-left: none;
+}
 	header .row {
 		display:block;
 	}
@@ -134,6 +147,10 @@
 .descr {
 text-align: center;
 margin-top: 30px;
+}
+
+.request-call_right:after {
+    width: 49.2vw;
 }
 
 }
@@ -379,7 +396,7 @@ margin-top: 30px;
 	content: '';
 	position: absolute;
 	background: #d9d9d9;
-	width: 100vw;
+	width: 100%;
 	height: 100%;
 	z-index: 0;
 	left: 0;
@@ -462,6 +479,17 @@ margin-top: 30px;
 	font-size: 16px;
 	padding: 0 10px;
 	padding-bottom: 10px;
+	border-right: none;
+	border-left: none;
+}
+.main_form > .free_consultation {
+	border-radius: 0px;
+}
+.main_form > .free_consultation > form > .row_flex {
+	justify-content: center;
+}
+.main_form > .free_consultation .check_box {
+	width:320px;
 }
 }
 @media (min-width: 280px) and (max-width: 480px) {
@@ -508,6 +536,9 @@ margin-top: 30px;
 		padding:0;
 		display:block;
 	}
+	.main_form > .free_consultation > form > .row_flex {
+		display: flex;
+}
 	.submit_popup {
 		width:100%;
 		margin-bottom:10px;

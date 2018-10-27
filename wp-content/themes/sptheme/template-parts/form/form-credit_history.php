@@ -20,13 +20,12 @@
                 <option>Услуга</option>
             </select>
             <div class="row_flex check">
-                <div class="hidden_box">
-                    <p>Текст о согласии обработки персональных данных Текст о согласии обработки персональных данных Текст о согласии обработки персональных данных</p>
-                </div>
                 <input class="submit_popup" type="submit" value="Заказать">
                 <div class="check_box">
                     <input type="checkbox" id="c1" name="cc" />
-                    <label for="c1"><span></span>Я даю согласие на обработку своих персональных данных</label>
+                    <label for="c1"><span></span>Я даю согласие на передачу и обработку своих персональных данных
+                        согласно <a href="<?php echo esc_url(home_url(privacy_policy().'/')); ?>" target="_blank">политике конфиденциальности</a> и
+                        <a href="<?php echo esc_url(home_url(privacy_policy().'/')); ?>" target="_blank">пользовательскому соглашению</a></label>
                 </div>
             </div>
         </form>

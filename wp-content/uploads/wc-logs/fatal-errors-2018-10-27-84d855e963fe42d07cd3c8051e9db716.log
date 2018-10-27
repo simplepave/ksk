@@ -1,0 +1,2 @@
+2018-10-27T15:58:46+00:00 CRITICAL require(): Failed opening required 'classes/SP_Woo.php' (include_path='.;w:/modules/php/PHP-7.2-x64;w:/modules/php/PHP-7.2-x64/PEAR/pear') в W:\domains\ksk.local\wp-content\themes\sptheme\functions.php на строке 12
+

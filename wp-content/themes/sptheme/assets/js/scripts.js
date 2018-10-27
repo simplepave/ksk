@@ -107,8 +107,3 @@ $(document).ready(function() {
 		items:1
 	})
 })
-
-
-$(function(){
-	$('input[placeholder], textarea[placeholder]').placeholder();
-});
