@@ -10,20 +10,17 @@ if (!$product)
     page_404();
 
 $shop_data = shop_data();
-// set_query_var('var_product_id', $product->ID);
 $product_image_full = wp_get_attachment_image_src(get_post_thumbnail_id($product->ID), 'full')[0];
 
 get_header();
 
-$breadcrumbs[] = [
+$breadcrumbs = [[
     'title' => $shop_data->post_title,
     'href'  => $shop_data->post_name . '/',
-];
-
-$breadcrumbs[] = [
+],[
     'title' => $product->post_title,
     'href'  => $shop_data->post_name . '/' . $product->post_name . '/',
-];
+]];
 
 set_query_var('var_post_title', $product->post_title);
 set_query_var('var_breadcrumbs', $breadcrumbs);
@@ -53,7 +50,7 @@ get_template_part('template-parts/parts/bread', 'crumbs');
                         <div class="row no-gutters justify-content-between row_calculator">
                             <div class="input_count">
                                 <p>Сумма кредита</p>
-                                <input class="js-price" value="10000">
+                                <input class="js-price" value="25000">
                             </div>
                             <div class="row_range">
                                 <input type="text" id="tabSlider1">
@@ -71,7 +68,7 @@ get_template_part('template-parts/parts/bread', 'crumbs');
                         <div class="row no-gutters justify-content-between row_calculator">
                             <div class="input_count">
                                 <p>Ставка</p>
-                                <input class="js-p-percent" value="2">
+                                <input class="js-percent" value="2">
                             </div>
                             <div class="row_range">
                                 <input type="text" id="tabSlider7">
@@ -80,7 +77,7 @@ get_template_part('template-parts/parts/bread', 'crumbs');
                         <div class="row no-gutters justify-content-between row_calculator">
                             <div class="input_count">
                                 <p>Ежемесячный платеж</p>
-                                <input type="text" value="123 000 руб.">
+                                <input class="js-payment" type="text" value="2 522,97 ₽" readonly="readonly">
                             </div>
                             <div class="row_range">
                                 <input class="calculator_but" type="button" value="Оставить заявку"></button>
