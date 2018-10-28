@@ -84,11 +84,11 @@ jQuery(document).ready(function($) {
      */
 
 	var percentPS = $('#tabSlider7').ionRangeSlider({
-		from : 2,
+		from : 1.50,
         to : 30,
-		min: 1,
+		min: 0.01,
 		max: 30,
-		step: 1,
+		step: 0.01,
 		onChange: function(ui) {
 			$('.js-percent').val(ui.from);
 			P = ui.from;
@@ -99,7 +99,8 @@ jQuery(document).ready(function($) {
 	$('.js-percent').val($('#tabSlider7').data('from'));
 
 	$('.js-percent').keyup(function(e) {
-        var s = $(this).val().replace(/[^\d]/g, '');
+        var s = $(this).val().replace(/[^\d.]/g, '');
+        s = Math.trunc(s * 100) / 100;
         if (s > 30) s = 30;
 		$(this).val(s);
 
