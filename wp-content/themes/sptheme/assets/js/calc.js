@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
 
     function fnPfee() {
-        let i = (P * 0.01)/12, n = F;
+        let i = (P * 0.01)/12, n = F * 12;
         let K = i * (Math.pow((1 + i), n)) / ((Math.pow((1 + i), n)) - 1);
         let A = K * S;
 
@@ -12,6 +12,8 @@ jQuery(document).ready(function($) {
 
         $('.js-payment').val(output);
     }
+
+    setTimeout(fnPfee, 1000);
 
 	var S = $('.js-price').val();
     var F = $('.js-fee').val();
@@ -53,7 +55,7 @@ jQuery(document).ready(function($) {
      */
 
 	var priceFeS = $('#tabSlider3').ionRangeSlider({
-		from : 10,
+		from : 3,
         to : 30,
 		min: 1,
 		max: 30,
@@ -100,7 +102,15 @@ jQuery(document).ready(function($) {
 
 	$('.js-percent').keyup(function(e) {
         var s = $(this).val().replace(/[^\d.]/g, '');
-        s = Math.trunc(s * 100) / 100;
+
+        let re = /^\d+\.?(\d{1,2})?$/;
+        if (s && !re.test(s)) s = P;
+
+        let ren = /^\d+\.0?$/;
+
+        if (0 !== s.length && !ren.test(s))
+            s = (s == '0.00')? '0.01': Number(s);
+
         if (s > 30) s = 30;
 		$(this).val(s);
 
@@ -110,6 +120,4 @@ jQuery(document).ready(function($) {
 
         fnPfee();
 	});
-
-    fnPfee();
 });

@@ -528,14 +528,19 @@ nav ul li a {
 	-webkit-border-radius:33px;
 	width:280px;
 	height:66px;
-	line-height:21px;
+	line-height:40px;
 	color:#fff;
 	padding-top:12px;
 	display:inline-block;
+	text-align: center;
 }
 
 .button_order:hover {
 	background:#032C77;
+}
+
+.main_order > .button_order {
+	line-height: 21px;
 }
 
 .our_partners {
@@ -833,7 +838,18 @@ nav ul li a {
 	background:url(../images/bg-title.jpg) no-repeat center top;
 	height:226px;
 }
-
+.page-template-services > .title {
+	background:url(../images/bg-services-title.jpg) no-repeat center top;
+}
+.page-template-about > .title {
+	background:url(../images/bg-about-title.jpg) no-repeat center top;
+}
+.page-template-partners > .title {
+	background:url(../images/bg-partners-title.jpg) no-repeat center top;
+}
+.page-template-datachecking > .title {
+	background:url(../images/bg-datacheking-title.jpg) no-repeat center top;
+}
 .row_title {
 	width:100%;
 	height:226px;
@@ -1461,7 +1477,7 @@ label > a {
 	width:100%;
 	text-align:center;
 	margin:0 auto;
-	padding:40px 0 55px;
+	padding:20px 0 15px;
 	display:none;
 	border-radius: 20px;
 }
@@ -1513,7 +1529,7 @@ label > a {
 	width:100%;
 	text-align:center;
 	margin:0 auto;
-	padding:40px 0 55px;
+	padding:20px 0 15px;
 	display:none;
 	border-radius: 20px;
 }
@@ -1540,7 +1556,7 @@ label > a {
 	width:100%;
 	text-align:center;
 	margin:0 auto;
-	padding:40px 0 55px;
+	padding:20px 0 15px;
 	display:none;
 	border-radius: 20px;
 }

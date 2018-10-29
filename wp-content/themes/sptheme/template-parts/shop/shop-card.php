@@ -58,8 +58,8 @@ get_template_part('template-parts/parts/bread', 'crumbs');
                         </div>
                         <div class="row no-gutters justify-content-between row_calculator">
                             <div class="input_count">
-                                <p>Срок кредита</p>
-                                <input class="js-fee" value="10">
+                                <p>Срок кредита в годах</p>
+                                <input class="js-fee" value="3">
                             </div>
                             <div class="row_range">
                                 <input type="text" id="tabSlider3">
@@ -68,7 +68,7 @@ get_template_part('template-parts/parts/bread', 'crumbs');
                         <div class="row no-gutters justify-content-between row_calculator">
                             <div class="input_count">
                                 <p>Ставка</p>
-                                <input class="js-percent" value="2">
+                                <input class="js-percent" value="1.5">
                             </div>
                             <div class="row_range">
                                 <input type="text" id="tabSlider7">
@@ -80,7 +80,7 @@ get_template_part('template-parts/parts/bread', 'crumbs');
                                 <input class="js-payment" type="text" value="2 522,97 ₽" readonly="readonly">
                             </div>
                             <div class="row_range">
-                                <input class="calculator_but" type="button" value="Оставить заявку"></button>
+                                <a class="button_order popup" href="#free_consultation">Оставить заявку</a>
                             </div>
                         </div>
                     </div>

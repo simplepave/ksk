@@ -22,7 +22,7 @@ get_template_part('template-parts/parts/bread', 'crumbs');
         </div>
     </div>
     <div class="main_form">
-        <?php get_template_part('template-parts/form/form', 'free_consultation'); ?>
+        <?php get_template_part('template-parts/form/form', 'partners'); ?>
     </div>
     <?php get_template_part('template-parts/home/home', 'partners'); ?>
 <?php get_footer();
