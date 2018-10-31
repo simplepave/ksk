@@ -43,13 +43,13 @@ if (!function_exists('shop_data')) {
 }
 
 if (!function_exists('shop_product_data')) {
-    function shop_product_data($item = false) {
+    function shop_product_data($item = false, $cat_id = 19) {
         $args = [
             'post_type'      => 'product',
             'tax_query'      => [[
                 'taxonomy'  => 'product_cat',
                 'field'     => 'id',
-                'terms'     => 19,
+                'terms'     => $cat_id,
             ]],
             // 'product_tag'    => 'display',
             'post_status'    => 'publish',

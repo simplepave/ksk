@@ -11,6 +11,7 @@
  */
 
 require 'inc/classes/SP_Woo.php';
+require 'inc/classes/SP_tinkoff.php';
 require 'inc/classes/Header_Walker_Nav_Menu.php';
 require 'inc/classes/Service_Walker_Nav_Menu.php';
 

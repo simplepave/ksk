@@ -1,0 +1,33 @@
+2018-10-31T22:19:04+00:00 CRITICAL Uncaught Error: Call to undefined method SP_tinkoff::description_tinkoff() in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:26
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\test.php(11): SP_tinkoff->send_data(Object(WC_Order), 86)
+#1 W:\domains\ksk.local\wp-includes\template-loader.php(74): include('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-blog-header.php(19): require_once('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\index.php(17): require('W:\\domains\\ksk....')
+#4 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 26
+
+2018-10-31T22:35:11+00:00 CRITICAL syntax error, unexpected 'test' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 37
+
+2018-10-31T22:35:29+00:00 CRITICAL syntax error, unexpected 'test' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 37
+
+2018-10-31T22:54:37+00:00 CRITICAL Uncaught Error: Call to undefined method SP_tinkoff::getTaxForSend() in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:107
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(61): SP_tinkoff->get_receipt_items(86)
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\test.php(11): SP_tinkoff->send_data(Object(WC_Order), 86)
+#2 W:\domains\ksk.local\wp-includes\template-loader.php(74): include('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-blog-header.php(19): require_once('W:\\domains\\ksk....')
+#4 W:\domains\ksk.local\index.php(17): require('W:\\domains\\ksk....')
+#5 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 107
+
+2018-10-31T23:00:40+00:00 CRITICAL Uncaught Error: Call to undefined method SP_tinkoff::getTaxForSend() in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:107
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(61): SP_tinkoff->get_receipt_items(86)
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\test.php(11): SP_tinkoff->send_data(Object(WC_Order), 86)
+#2 W:\domains\ksk.local\wp-includes\template-loader.php(74): include('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-blog-header.php(19): require_once('W:\\domains\\ksk....')
+#4 W:\domains\ksk.local\index.php(17): require('W:\\domains\\ksk....')
+#5 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 107
+

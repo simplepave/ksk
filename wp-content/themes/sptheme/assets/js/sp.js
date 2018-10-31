@@ -7,6 +7,31 @@
 jQuery(document).ready(function($){
 
     /**
+     *
+     */
+
+    $('a[data-order-product]').click(function() {
+        let productID = Number($(this).attr('data-order-product'));
+
+        if (!productID) return;
+
+        let ajaxdata = {
+            action     : 'order-product',
+            nonce_code : spAjax.nonce,
+            product_ID : productID,
+        };
+
+        $.ajax({
+            type: 'post',
+            data: ajaxdata,
+            url: spAjax.url,
+            error: function(xhr, ajaxOptions, thrownError) {
+                console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            }
+        });
+    });
+
+    /**
      * Woo Order
      */
 
@@ -30,12 +55,21 @@ jQuery(document).ready(function($){
                 .css({'filter': 'none'});
             },
             success: function(json) {
-                if (json.response)
+                if (json.status == 'success') {
                     t.prev().css('color', 'green').text(json.message);
-                else
-                    t.prev().css('color', 'red').text(json.message);
+                    t.remove();
+                    document.location.href = json.paymentURL;
+                }
 
-                t.remove();
+                if (json.status == 'error') {
+                    t.prev().css('color', 'red').html(json.message);
+                    t.remove();
+                }
+
+                if (!json.status) {
+                    t.prev().css('color', 'red').html(json.message);
+                    t.remove();
+                }
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -121,7 +155,7 @@ jQuery(document).ready(function($){
      * Phone
      */
 
-    var phonemask = $('.phone-mask');
+    var phonemask = $('.phone-mask-payment');
     if (phonemask.length)
     phonemask.inputmask({
         mask: '+7 (999) 999-99-99',

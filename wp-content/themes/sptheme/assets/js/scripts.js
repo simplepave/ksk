@@ -4,27 +4,57 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$(this).next('div.nav_block').toggleClass('active');
 	});
-	
+
 	$('.nav_block ul li a').on('click', function(){
 		$('div.icon-menu').removeClass('active');
 		$('div.nav_block').removeClass('active');
 	});
-	
+
 	$(".popup").magnificPopup({removalDelay:300,type:"inline"});
-	
+
+    if ($('#order-payment').length) {
+        $.magnificPopup.open({
+            removalDelay: 300,
+            items: {
+                src: '#order-payment'
+            },
+            type: 'inline'
+        });
+    }
+
+    if ($('#message-tinkoff-success').length) {
+        $.magnificPopup.open({
+            removalDelay: 300,
+            items: {
+                src: '#message-tinkoff-success'
+            },
+            type: 'inline'
+        });
+    }
+
+    if ($('#message-tinkoff-error').length) {
+        $.magnificPopup.open({
+            removalDelay: 300,
+            items: {
+                src: '#message-tinkoff-error'
+            },
+            type: 'inline'
+        });
+    }
+
 	$('.popup_gallery').magnificPopup({
 		 delegate: 'a',
 		 type: 'image',
 		 gallery: {
 			 enabled: true,
 			 navigateByImgClick: true,
-			 preload: [0, 1] 
+			 preload: [0, 1]
 		 }
 	});
-	
+
 	$('select').styler({ selectSearch: true });
-	
-		
+
+
 	$('.check_box').hover(function(){
     	$('div.hidden_box').stop().fadeIn(150);
 		$('div.check').toggleClass('active');
@@ -32,7 +62,7 @@ $(document).ready(function(){
         $('div.hidden_box').stop().fadeOut(50);
 		$('div.check').stop().removeClass('active');
    	});
-	
+
 	$(function (){
      	if($('#chose_file').length)
       		{
@@ -45,7 +75,7 @@ $(document).ready(function(){
           	}).change();
        	}
   	});
-		
+
 });
 
 $(document).ready(function() {
@@ -54,7 +84,7 @@ $(document).ready(function() {
 		margin:0,
 		nav: true,
 		loop: true,
-		responsive:{ 
+		responsive:{
 			0:{
                	items:1
          	},
@@ -83,7 +113,7 @@ $(document).ready(function() {
 		margin:30,
 		nav: true,
 		loop: true,
-		responsive:{ 
+		responsive:{
 			0:{
 				margin:0,
                	items:1
