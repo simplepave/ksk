@@ -53,8 +53,17 @@ add_action('template_redirect', 'shop_redirect', 1);
  */
 
 function woo_admin_order_meta($order) {
-    if ($comment = get_post_meta($order->id, 'comment', true))
-        echo '<p><strong>Комментарий:</strong> ' . $comment . '</p>';
+    $variable = [
+        'middle_name'     => 'Отчество',
+        'date_birth'      => 'Дата рождения',
+        'passport_series' => 'Серия паспорта',
+        'passport_issued' => 'Дата выдачи'
+    ];
+
+    foreach ($variable as $field => $value) {
+        if ($post_meta = get_post_meta($order->id, $field, true))
+            echo '<p><strong>' . $value . ':</strong> ' . $post_meta . '</p>';
+    }
 }
 
 add_action('woocommerce_admin_order_data_after_billing_address', 'woo_admin_order_meta', 10, 1);

@@ -4,12 +4,6 @@
  * Template name: Проверка данных
  */
 
-if (isset($_GET['bitrix_status'], $_SESSION['product_ID']) && $_GET['bitrix_status'] == 'success') {
-    $var_product_id = $_SESSION['product_ID'];
-    unset($_SESSION['product_ID']);
-    set_query_var('var_product_id', $var_product_id);
-}
-
 if (isset($_GET['tinkoff_status'])) {
     if ($_GET['tinkoff_status'] == 'success') $tinkoff_success = true; // ?tinkoff_status=success
     if ($_GET['tinkoff_status'] == 'error') $tinkoff_error = true;     // ?tinkoff_status=error
@@ -53,7 +47,7 @@ foreach ($products as $key => $product) :
                             <?php echo $product_content; ?>
                         </div>
                         <strong><?php echo $price; ?> <?php echo $currency; ?></strong>
-                        <a data-order-product="<?php echo $product->ID; ?>" class="popup button_call" href="#payment-bitrix">Заказать</a>
+                        <a data-order-product="<?php echo $product->ID; ?>" class="popup button_call" href="#popup-data-checking">Заказать</a>
                     </div>
                 </div>
 <?php endforeach; ?>
@@ -114,7 +108,7 @@ foreach ($products as $key => $product) :
                 <div class="w-100 "></div>
 
                 <div class="col-xl-2 col-sm-12">
-                    <a class="popup button_call" href="#get_report">Получить отчет</a>
+                    <a data-order-product="154" class="popup button_call" href="#popup-data-checking">Получить отчет</a>
                 </div>
                 <div class="credit-scoring_blank">
                     <img src="<?php echo esc_url(home_url('wp-content/uploads/2018/10/credit-scoring.jpg')); ?>">
@@ -183,7 +177,7 @@ foreach ($products as $key => $product) :
 
     <!-- Заполнить заявку -->
     <div class="request">
-        <a class="popup button_call" href="#order_report">Заполнить заявку</a>
+        <a class="popup button_call" href="#popup-data-checking">Заполнить заявку</a>
     </div>
 
     <!-- Заказать отчет -->
@@ -204,7 +198,7 @@ foreach ($products as $key => $product) :
                      по его результатам.
                     </div>
 
-                    <a class="popup button_call" href="#order_report">Заказать отчет</a>
+                    <a class="popup button_call" href="#popup-data-checking">Заказать отчет</a>
                 </div>
 
                 <div class="col-5">
@@ -257,11 +251,7 @@ foreach ($products as $key => $product) :
         </div>
     </div>
 <?php
-if (isset($var_product_id)) get_template_part('template-parts/form/form', 'payment');
-if (isset($tinkoff_success)) get_template_part('template-parts/payment/message', 'tinkoff_success');
-if (isset($tinkoff_error)) get_template_part('template-parts/payment/message', 'tinkoff_error');
-get_template_part('template-parts/form/form', 'payment_bitrix');
-
-get_template_part('template-parts/form/form', 'order_report');
-get_template_part('template-parts/form/form', 'get_report');
+get_template_part('template-parts/data-checking/form', 'data_checking');
+if (isset($tinkoff_success)) get_template_part('template-parts/data-checking/message', 'tinkoff_success');
+if (isset($tinkoff_error)) get_template_part('template-parts/data-checking/message', 'tinkoff_error');
 get_footer();

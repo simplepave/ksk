@@ -1,0 +1,44 @@
+2018-11-02T21:37:42+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_status() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:149
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(91): SP_tinkoff->get_receipt_items(101)
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(51): SP_tinkoff->send_data(Object(WC_Order), 101)
+#2 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(40): SP_tinkoff->tinkoff_subscription_payment(101)
+#3 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#4 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#5 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#6 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#7 W:\domains\ksk.local\wp-includes\cla в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 149
+
+2018-11-02T21:37:57+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_status() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:149
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(91): SP_tinkoff->get_receipt_items(102)
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(51): SP_tinkoff->send_data(Object(WC_Order), 102)
+#2 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(40): SP_tinkoff->tinkoff_subscription_payment(102)
+#3 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#4 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#5 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#6 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#7 W:\domains\ksk.local\wp-includes\cla в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 149
+
+2018-11-02T21:39:39+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_status() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:149
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(91): SP_tinkoff->get_receipt_items(105)
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(51): SP_tinkoff->send_data(Object(WC_Order), 105)
+#2 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(40): SP_tinkoff->tinkoff_subscription_payment(105)
+#3 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#4 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#5 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#6 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#7 W:\domains\ksk.local\wp-includes\cla в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 149
+
+2018-11-02T21:39:56+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_status() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php:149
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(91): SP_tinkoff->get_receipt_items(106)
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php(51): SP_tinkoff->send_data(Object(WC_Order), 106)
+#2 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(40): SP_tinkoff->tinkoff_subscription_payment(106)
+#3 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#4 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#5 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#6 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#7 W:\domains\ksk.local\wp-includes\cla в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_tinkoff.php на строке 149
+

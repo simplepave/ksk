@@ -7,43 +7,41 @@
 jQuery(document).ready(function($){
 
     /**
-     *
+     * productID popup
      */
 
-    $('a[data-order-product]').click(function() {
-        let productID = Number($(this).attr('data-order-product'));
+    let productID = false;
 
-        if (!productID) return;
+    $('a.popup').click(function() {
+        let t = $(this);
+        let popupID = t.attr('href');
 
-        let ajaxdata = {
-            action     : 'order-product',
-            nonce_code : spAjax.nonce,
-            product_ID : productID,
-        };
+        if (popupID !== '#popup-data-checking') return;
 
-        $.ajax({
-            type: 'post',
-            data: ajaxdata,
-            url: spAjax.url,
-            error: function(xhr, ajaxOptions, thrownError) {
-                console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-            }
-        });
+        let id = t.attr('data-order-product');
+
+        if (id) productID = id;
+        else productID = false;
+
+        $(popupID).find('form').show();
+        $(popupID).find('.message-data-checking').remove();
     });
 
     /**
-     * Woo Order
+     * form Data Checking
      */
 
-     $('body').on('submit', '#woo-order-form', function(e){
+     $('body').on('submit', '#form-data-checking', function(e){
         e.preventDefault();
         var t = $(this);
         var btn = t.find('input[type="submit"]');
         if(btn.hasClass('working')) return;
 
+        var product = Number(productID)? '&product_id=' + Number(productID): '';
+
         $.ajax({
             type: 'post',
-            data: t.serialize() + '&action=woo-order&nonce_code=' + spAjax.nonce,
+            data: t.serialize() + '&action=data-checking&nonce_code=' + spAjax.nonce + product,
             url: spAjax.url,
             dataType: 'json',
             beforeSend: function() {
@@ -56,20 +54,16 @@ jQuery(document).ready(function($){
             },
             success: function(json) {
                 if (json.status == 'success') {
-                    t.prev().css('color', 'green').text(json.message);
-                    t.remove();
-                    document.location.href = json.paymentURL;
+                    t.before('<p class="message-data-checking" style="color: green;">' + json.message + '</p>').hide();
+                    if (json.paymentURL) document.location.href = json.paymentURL;
                 }
 
                 if (json.status == 'error') {
-                    t.prev().css('color', 'red').html(json.message);
-                    t.remove();
+                    t.before('<p class="message-data-checking" style="color: red;">' + json.message + '</p>').hide();
                 }
 
-                if (!json.status) {
-                    t.prev().css('color', 'red').html(json.message);
-                    t.remove();
-                }
+                if (!json.status)
+                    t.before('<p class="message-data-checking" style="color: red;">' + json.message + '</p>').hide();
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -155,7 +149,7 @@ jQuery(document).ready(function($){
      * Phone
      */
 
-    var phonemask = $('.phone-mask-payment');
+    var phonemask = $('.phone-mask');
     if (phonemask.length)
     phonemask.inputmask({
         mask: '+7 (999) 999-99-99',
