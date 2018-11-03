@@ -50,4 +50,4 @@ if (wp_mail($to, $subject, $content, $headers)) {
     $json = ['status' => 'success'];
     $message['mail'] = ['status' => 1, 'title' => 'Сообщение успешно отправлено!'];
 }
-else $message['mail'] = ['status' => 0, 'title' => '<strong>Ошибка</strong>, сообщение не отправлено!'];
+else $message['mail'] = ['status' => 0, 'title' => 'сообщение не отправлено'];

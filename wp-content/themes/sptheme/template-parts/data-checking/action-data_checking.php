@@ -33,9 +33,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['phone'])) {
                 $json = ['status' => 'success', 'paymentURL' => $request->PaymentURL];
                 $message['payment'] = ['status' => 1, 'title' => 'Перенаправление на оплату!'];
             }
-            else $message['payment'] = ['status' => 0, 'title' => '<strong>Ошибка</strong>, платежного шлюза!'];
+            else $message['payment'] = ['status' => 0, 'title' => 'платежного шлюза'];
         }
-        else $message['woo_order'] = ['status' => 0, 'title' => '<strong>Ошибка</strong>, ордер не создан!'];
+        else $message['woo_order'] = ['status' => 0, 'title' => 'ордер не создан'];
     }
     else {
         require 'mail-data_checking.php';
@@ -43,7 +43,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['phone'])) {
 }
 
 if (is_array($message)) $json['message'] = $message;
-else $json['message'] = ['error' => ['status' => 0, 'title' => '<strong>Ошибка</strong>, обратитесь к администратору.']];
+else $json['message'] = ['error' => ['status' => 0, 'title' => 'обратитесь к администратору']];
+
+foreach ($json['message'] as $key => $value) {
+    if (!$value['status']) {
+        $log = '[' . date('D M d H:i:s Y', time()) . '] ';
+        $log .= $key . ' = Ошибка, ' . $value['title'] . '!';
+        $log .= "\n";
+        file_put_contents(dirname(__FILE__) . "/error.log", $log, FILE_APPEND);
+
+        $json['message'][$key]['title'] = '<strong>Ошибка</strong>, ' . $value['title'] . '!';
+    }
+}
 
 echo json_encode($json);
 exit();
