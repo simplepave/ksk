@@ -4,7 +4,8 @@
  *
  */
 
-$json = ['status' => 0, 'message' => '<strong>Ошибка</strong>, обратитесь к администратору.'];
+$json = ['status' => 0];
+$message = false;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['phone'])) {
     $product_id = isset($_POST['product_id']) && is_numeric($_POST['product_id'])? (int)$_POST['product_id']: 0;
@@ -28,17 +29,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['phone'])) {
 
             require 'mail-data_checking.php';
 
-            if (isset($request->Success, $request->ErrorCode) && $request->Success && $request->ErrorCode === '0')
-                $json = [
-                    'status' => 'success',
-                    'message' => 'Перенаправление на оплату!',
-                    'paymentURL' => $request->PaymentURL,
-                ];
+            if (isset($request->Success, $request->ErrorCode) && $request->Success && $request->ErrorCode === '0') {
+                $json = ['status' => 'success', 'paymentURL' => $request->PaymentURL];
+                $message['payment'] = ['status' => 1, 'title' => 'Перенаправление на оплату!'];
+            }
+            else $message['payment'] = ['status' => 0, 'title' => '<strong>Ошибка</strong>, платежного шлюза!'];
         }
-    } else {
+        else $message['woo_order'] = ['status' => 0, 'title' => '<strong>Ошибка</strong>, ордер не создан!'];
+    }
+    else {
         require 'mail-data_checking.php';
     }
 }
+
+if (is_array($message)) $json['message'] = $message;
+else $json['message'] = ['error' => ['status' => 0, 'title' => '<strong>Ошибка</strong>, обратитесь к администратору.']];
 
 echo json_encode($json);
 exit();

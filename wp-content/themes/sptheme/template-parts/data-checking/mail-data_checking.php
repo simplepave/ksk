@@ -40,14 +40,14 @@ $headers = [
     'Content-Type: text/html; charset="' . get_option('blog_charset') . '"',
 ];
 
-$message = '';
+$content = '';
 foreach ($form_fields as $value) {
     if (!isset($value['body']))
-        $message .= '<b>' . $value['name'] . ' :</b> ' . $value['value'] . '<br />';
+        $content .= '<b>' . $value['name'] . ' :</b> ' . $value['value'] . '<br />';
 }
 
-if (wp_mail($to, $subject, $message, $headers))
-    $json = [
-        'status' => 'success',
-        'message' => 'Сообщение успешно отправлено!',
-    ];
+if (wp_mail($to, $subject, $content, $headers)) {
+    $json = ['status' => 'success'];
+    $message['mail'] = ['status' => 1, 'title' => 'Сообщение успешно отправлено!'];
+}
+else $message['mail'] = ['status' => 0, 'title' => '<strong>Ошибка</strong>, сообщение не отправлено!'];

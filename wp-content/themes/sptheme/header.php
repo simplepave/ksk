@@ -10,7 +10,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <?php wp_head(); ?>
 </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class(isset($var_body_class)? $var_body_class: ''); ?>>
         <header>
             <div class="container">
                 <div class="row no-gutters justify-content-between align-items-start">

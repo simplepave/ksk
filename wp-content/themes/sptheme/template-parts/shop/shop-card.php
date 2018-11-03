@@ -12,6 +12,7 @@ if (!$product)
 $shop_data = shop_data();
 $product_image_full = wp_get_attachment_image_src(get_post_thumbnail_id($product->ID), 'full')[0];
 
+set_query_var('var_body_class', 'product-' . $product->ID);
 get_header();
 
 $breadcrumbs = [[

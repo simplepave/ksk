@@ -53,17 +53,16 @@ jQuery(document).ready(function($){
                 .css({'filter': 'none'});
             },
             success: function(json) {
-                if (json.status == 'success') {
-                    t.before('<p class="message-data-checking" style="color: green;">' + json.message + '</p>').hide();
-                    if (json.paymentURL) document.location.href = json.paymentURL;
-                }
+                // if (json.status == 'error') {} else {}
+                let message = '';
 
-                if (json.status == 'error') {
-                    t.before('<p class="message-data-checking" style="color: red;">' + json.message + '</p>').hide();
-                }
+                $.each(json.message, function(index, value) {
+                    let color = value.status? 'green': 'red';
+                    message += '<p data-message="' + index + '" class="message-data-checking" style="color: ' + color + ';">' + value.title + '</p>';
+                });
 
-                if (!json.status)
-                    t.before('<p class="message-data-checking" style="color: red;">' + json.message + '</p>').hide();
+                t.before(message).hide();
+                if (json.paymentURL) document.location.href = json.paymentURL;
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
