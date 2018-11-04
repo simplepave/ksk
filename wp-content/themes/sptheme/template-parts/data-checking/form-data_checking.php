@@ -24,7 +24,7 @@
             <div class="row_flex check">
 
                 <div class="check_box">
-                    <input type="checkbox" id="c1" name="cc" required="required" checked="checked">
+                    <input type="checkbox" id="c1" name="cc" checked="checked">
                     <label for="c1"><span></span>Я даю согласие на передачу и обработку своих персональных данных
                         согласно <a href="<?php echo esc_url(home_url(privacy_policy().'/')); ?>" target="_blank">политике конфиденциальности</a> и
                         <a href="<?php echo esc_url(home_url(privacy_policy().'/')); ?>" target="_blank">пользовательскому соглашению</a></label>

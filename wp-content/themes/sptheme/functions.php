@@ -15,6 +15,9 @@ require 'inc/classes/SP_tinkoff.php';
 require 'inc/classes/Header_Walker_Nav_Menu.php';
 require 'inc/classes/Service_Walker_Nav_Menu.php';
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+require 'inc/classes/SP_Validation.php';
+
 /**
  *
  */

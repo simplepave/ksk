@@ -25,6 +25,25 @@ jQuery(document).ready(function($){
 
         $(popupID).find('form').show();
         $(popupID).find('.message-data-checking').remove();
+
+        let item = $(popupID).find('input.input_popup');
+
+        item.each(function(e) {
+            let t = $(this).val('');
+
+            if (typeof t.attr('data-value') !== 'undefined')
+                t.removeAttr('data-value');
+        });
+
+        $(popupID).find('.message-accepted').remove();
+    });
+
+    $('#popup-data-checking').on('focus', 'input[data-value]', function(e) {
+        $(this).val($(this).attr('data-value')).removeAttr('data-value');
+    });
+
+    $('#popup-data-checking').on('change', 'input[name="cc"]', function(e) {
+        $(this).parent('.check_box').find('.message-accepted').remove();
     });
 
     /**
@@ -36,6 +55,10 @@ jQuery(document).ready(function($){
         var t = $(this);
         var btn = t.find('input[type="submit"]');
         if(btn.hasClass('working')) return;
+
+        t.find('input[data-value]').each(function(e) {
+            $(this).val($(this).attr('data-value')).removeAttr('data-value');
+        });
 
         var product = Number(productID)? '&product_id=' + Number(productID): '';
 
@@ -53,16 +76,42 @@ jQuery(document).ready(function($){
                 .css({'filter': 'none'});
             },
             success: function(json) {
-                // if (json.status == 'error') {} else {}
-                let message = '';
+                if (json.status == 'error') {
+                    $.each(json.message, function(index, value) {
+                        let item = t.find('input[name="' + index + '"]');
 
-                $.each(json.message, function(index, value) {
-                    let color = value.status? 'green': 'red';
-                    message += '<p data-message="' + index + '" class="message-data-checking" style="color: ' + color + ';">' + value.title + '</p>';
-                });
+                        if (item.length) {
+                            let message = '';
 
-                t.before(message).hide();
-                if (json.paymentURL) document.location.href = json.paymentURL;
+                            for (var obj in value) {
+                                let i = Object.keys(value).indexOf(obj);
+                                if (i === 0) {
+                                    message = value[obj];
+                                    break;
+                                }
+                            }
+                            if (index === 'cc') {
+                                let accepted = $('.message-accepted');
+
+                                if (accepted.length) accepted.html(message);
+                                else item.before('<span class="message-accepted">' + message + '</span>')
+                            }
+                            else
+                                item.attr('data-value', item.val().trim()).val(message);
+                        }
+                    });
+                }
+                else {
+                    let message = '';
+
+                    $.each(json.message, function(index, value) {
+                        let color = value.status? 'green': 'red';
+                        message += '<p data-message="' + index + '" class="message-data-checking" style="color: ' + color + ';">' + value.title + '</p>';
+                    });
+
+                    t.before(message).hide();
+                    if (json.paymentURL) document.location.href = json.paymentURL;
+                }
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);

@@ -1,6 +1,15 @@
 @import url("reset.css");
 @import url("font/stylesheet.css");
 
+input[data-value] {
+    color: red;
+    border: 1px solid red;
+}
+
+.message-accepted {
+    color: red;
+}
+
 body {
 	background:#fff;
 	font-family: 'RobotoRegular';
@@ -9,10 +18,10 @@ body {
 }
 
 a {
-	-webkit-transition:all .3s; 
-	-moz-transition:all .3s; 
-	-ms-transition:all .3s;  
-	-o-transition:all .3s; 
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-ms-transition:all .3s;
+	-o-transition:all .3s;
 	transition:all .3s;
 	text-decoration:none;
 }
@@ -1957,7 +1966,7 @@ label > a {
 	margin-bottom: 12px;
 	z-index: 1;
 	position: relative;
-} 
+}
 .request-call a {
 	margin-top: 45px;
 	width: 280px;

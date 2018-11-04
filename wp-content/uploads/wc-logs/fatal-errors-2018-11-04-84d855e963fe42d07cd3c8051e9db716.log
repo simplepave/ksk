@@ -1,0 +1,262 @@
+2018-11-04T06:11:53+00:00 CRITICAL Uncaught Error: Call to private method SP_Validation::validation() from context '' in W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php:12
+Stack trace:
+#0 W:\domains\ksk.local\wp-includes\template.php(690): require()
+#1 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#2 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#4 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_action('wp_ajax_data-ch...')
+#8 {main}
+  thrown в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php на строке 12
+
+2018-11-04T12:01:17+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:01:23+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:02:31+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:02:37+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:04:17+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:04:43+00:00 CRITICAL syntax error, unexpected '$key' (T_VARIABLE) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:05:21+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:05:43+00:00 CRITICAL Uncaught Error: Function name must be a string in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(100): do_ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:09:49+00:00 CRITICAL syntax error, unexpected '$key' (T_VARIABLE) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:10:40+00:00 CRITICAL Uncaught Error: Call to undefined function required() in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:59
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php(10 в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:11:04+00:00 CRITICAL Cannot redeclare SP_Validation::required() в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 93
+
+2018-11-04T12:11:07+00:00 CRITICAL Cannot redeclare SP_Validation::required() в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 93
+
+2018-11-04T12:11:36+00:00 CRITICAL Cannot redeclare SP_Validation::required() в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 93
+
+2018-11-04T12:11:40+00:00 CRITICAL Cannot redeclare SP_Validation::required() в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 93
+
+2018-11-04T12:12:06+00:00 CRITICAL Cannot redeclare SP_Validation::required() в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 93
+
+2018-11-04T12:15:32+00:00 CRITICAL syntax error, unexpected ''validate_'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:15:35+00:00 CRITICAL syntax error, unexpected ''validate_'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 59
+
+2018-11-04T12:57:45+00:00 CRITICAL Uncaught Error: Call to undefined function name_isset() in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:52
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(13): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admin\admin-ajax.php( в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 52
+
+2018-11-04T17:20:23+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 107
+
+2018-11-04T17:21:23+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 107
+
+2018-11-04T17:21:29+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST) в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 107
+
+2018-11-04T18:12:47+00:00 CRITICAL syntax error, unexpected ''passport_series'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php на строке 15
+
+2018-11-04T18:16:05+00:00 CRITICAL syntax error, unexpected ';', expecting ']' в W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php на строке 14
+
+2018-11-04T19:17:56+00:00 CRITICAL Uncaught Error: Call to undefined method SP_Validation::validate_email() in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:88
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#1 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#2 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#3 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#5 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 W:\domains\ksk.local\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#8 W:\domains\ksk.local\wp-admi в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 88
+
+2018-11-04T20:36:55+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:37:00+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:37:05+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:37:09+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:37:11+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:37:32+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:37:35+00:00 CRITICAL Uncaught Error: Call to a member function format() on boolean in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:210
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Arra в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 210
+
+2018-11-04T20:51:15+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:213
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 213
+
+2018-11-04T20:51:20+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php:213
+Stack trace:
+#0 W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php(88): SP_Validation->validate_date_format()
+#1 W:\domains\ksk.local\wp-content\themes\sptheme\template-parts\data-checking\action-data_checking.php(14): SP_Validation->validation(Array)
+#2 W:\domains\ksk.local\wp-includes\template.php(690): require('W:\\domains\\ksk....')
+#3 W:\domains\ksk.local\wp-includes\template.php(647): load_template('W:\\domains\\ksk....', false)
+#4 W:\domains\ksk.local\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 W:\domains\ksk.local\wp-content\themes\sptheme\inc\functions\hooks.php(71): get_template_part('template-parts/...', 'data_checking')
+#6 W:\domains\ksk.local\wp-includes\class-wp-hook.php(286): data_checking_callback('')
+#7 W:\domains\ksk.local\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+ в W:\domains\ksk.local\wp-content\themes\sptheme\inc\classes\SP_Validation.php на строке 213
+
